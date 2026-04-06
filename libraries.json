@@ -1,0 +1,1641 @@
+{
+  "meta": {
+    "view": {
+      "id": "tc36-hn4j",
+      "name": "Austin Public Library Locations",
+      "assetType": "dataset",
+      "attribution": "City of Austin, Texas - data.austintexas.gov",
+      "attributionLink": "https://library.austintexas.gov/",
+      "averageRating": 0,
+      "category": "Locations and Maps",
+      "createdAt": 1436459477,
+      "description": "Address, phone number, and information about what is available at a location.",
+      "diciBackend": false,
+      "displayType": "table",
+      "domainCName": "data.austintexas.gov",
+      "downloadCount": 1489,
+      "hideFromCatalog": false,
+      "hideFromDataJson": false,
+      "iconUrl": "fileId:7883fea5-a252-40e8-a76a-485db0c9a95c",
+      "indexUpdatedAt": 1558378957,
+      "licenseId": "PUBLIC_DOMAIN",
+      "locked": false,
+      "newBackend": true,
+      "numberOfComments": 0,
+      "oid": 31534789,
+      "provenance": "official",
+      "publicationAppendEnabled": false,
+      "publicationDate": 1558378975,
+      "publicationGroup": 3466321,
+      "publicationStage": "published",
+      "rowIdentifierColumnId": 409386151,
+      "rowsUpdatedAt": 1761241912,
+      "rowsUpdatedBy": "knx5-5zd7",
+      "tableId": 16211033,
+      "totalTimesRated": 0,
+      "viewCount": 3406,
+      "viewLastModified": 1773773548,
+      "viewType": "tabular",
+      "approvals": [
+        {
+          "reviewedAt": 1558378975,
+          "reviewedAutomatically": true,
+          "state": "approved",
+          "submissionId": 679001,
+          "submissionObject": "public_audience_request",
+          "submissionOutcome": "change_audience",
+          "submittedAt": 1558378975,
+          "targetAudience": "public",
+          "workflowId": 3284,
+          "submissionDetails": {
+            "permissionType": "READ"
+          },
+          "submissionOutcomeApplication": {
+            "failureCount": 0,
+            "status": "success"
+          },
+          "submitter": {
+            "id": "arfh-jhzi",
+            "displayName": "Bryce Benton"
+          }
+        },
+        {
+          "message": "The `strict_permissions` flag must be on to enable internal approvals.",
+          "state": "unsubmittable",
+          "targetAudience": "internal",
+          "workflowId": 4707
+        }
+      ],
+      "clientContext": {
+        "clientContextVariables": [],
+        "inheritedVariables": {
+
+        }
+      },
+      "columns": [
+        {
+          "id": -1,
+          "name": "sid",
+          "dataTypeName": "meta_data",
+          "fieldName": ":sid",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {
+
+          },
+          "flags": [
+            "hidden"
+          ]
+        },
+        {
+          "id": -1,
+          "name": "id",
+          "dataTypeName": "meta_data",
+          "fieldName": ":id",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {
+
+          },
+          "flags": [
+            "hidden"
+          ]
+        },
+        {
+          "id": -1,
+          "name": "position",
+          "dataTypeName": "meta_data",
+          "fieldName": ":position",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {
+
+          },
+          "flags": [
+            "hidden"
+          ]
+        },
+        {
+          "id": -1,
+          "name": "created_at",
+          "dataTypeName": "meta_data",
+          "fieldName": ":created_at",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {
+
+          },
+          "flags": [
+            "hidden"
+          ]
+        },
+        {
+          "id": -1,
+          "name": "created_meta",
+          "dataTypeName": "meta_data",
+          "fieldName": ":created_meta",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {
+
+          },
+          "flags": [
+            "hidden"
+          ]
+        },
+        {
+          "id": -1,
+          "name": "updated_at",
+          "dataTypeName": "meta_data",
+          "fieldName": ":updated_at",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {
+
+          },
+          "flags": [
+            "hidden"
+          ]
+        },
+        {
+          "id": -1,
+          "name": "updated_meta",
+          "dataTypeName": "meta_data",
+          "fieldName": ":updated_meta",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {
+
+          },
+          "flags": [
+            "hidden"
+          ]
+        },
+        {
+          "id": -1,
+          "name": "meta",
+          "dataTypeName": "meta_data",
+          "fieldName": ":meta",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {
+
+          },
+          "flags": [
+            "hidden"
+          ]
+        },
+        {
+          "id": 409386150,
+          "name": "Term ID",
+          "dataTypeName": "url",
+          "description": "",
+          "fieldName": "term_id",
+          "position": 1,
+          "renderTypeName": "url",
+          "tableColumnId": 29631738,
+          "width": 317,
+          "format": {
+
+          },
+          "subColumnTypes": [
+            "url",
+            "description"
+          ]
+        },
+        {
+          "id": 409386151,
+          "name": "Name",
+          "dataTypeName": "text",
+          "fieldName": "name",
+          "position": 2,
+          "renderTypeName": "text",
+          "tableColumnId": 29631741,
+          "width": 148,
+          "cachedContents": {
+            "largest": "Yarborough Branch",
+            "non_null": "23",
+            "null": "0",
+            "top": [
+              {
+                "item": "John Gillum Branch (North Village)",
+                "count": "1"
+              },
+              {
+                "item": "Howson Branch",
+                "count": "1"
+              },
+              {
+                "item": "University Hills Branch",
+                "count": "1"
+              },
+              {
+                "item": "Central Library",
+                "count": "1"
+              },
+              {
+                "item": "Cepeda Branch",
+                "count": "1"
+              },
+              {
+                "item": "Pleasant Hill Branch",
+                "count": "1"
+              },
+              {
+                "item": "Little Walnut Creek Branch",
+                "count": "1"
+              },
+              {
+                "item": "Yarborough Branch",
+                "count": "1"
+              },
+              {
+                "item": "Carver Branch",
+                "count": "1"
+              },
+              {
+                "item": "Twin Oaks Branch",
+                "count": "1"
+              },
+              {
+                "item": "St. John Branch",
+                "count": "1"
+              },
+              {
+                "item": "Willie Mae Kirk Branch",
+                "count": "1"
+              },
+              {
+                "item": "Hampton Branch at Oak Hill",
+                "count": "1"
+              },
+              {
+                "item": "Recycled Reads Bookstore",
+                "count": "1"
+              },
+              {
+                "item": "Menchaca Road Branch",
+                "count": "1"
+              },
+              {
+                "item": "Milwood Branch",
+                "count": "1"
+              },
+              {
+                "item": "Windsor Park Branch",
+                "count": "1"
+              },
+              {
+                "item": "Old Quarry Branch",
+                "count": "1"
+              },
+              {
+                "item": "Ruiz Branch",
+                "count": "1"
+              },
+              {
+                "item": "Terrazas Branch",
+                "count": "1"
+              }
+            ],
+            "smallest": "Austin History Center - John Henry Faulk Building",
+            "count": "23",
+            "cardinality": "23"
+          },
+          "format": {
+
+          }
+        },
+        {
+          "id": 409386152,
+          "name": "Address",
+          "dataTypeName": "location",
+          "fieldName": "address",
+          "position": 3,
+          "renderTypeName": "location",
+          "tableColumnId": 29631774,
+          "width": 184,
+          "format": {
+
+          }
+        },
+        {
+          "id": 409386154,
+          "name": "Latitude / Longitude",
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "latitude_longitude",
+          "position": 4,
+          "renderTypeName": "text",
+          "tableColumnId": 29631750,
+          "width": 340,
+          "cachedContents": {
+            "largest": "(30.433823000000, -97.773177700000)",
+            "non_null": "23",
+            "null": "0",
+            "top": [
+              {
+                "item": "(30.332823100000, -97.693701400000)",
+                "count": "1"
+              },
+              {
+                "item": "(30.248696800000, -97.762381300000)",
+                "count": "1"
+              },
+              {
+                "item": "(30.363407300000, -97.698390500000)",
+                "count": "1"
+              },
+              {
+                "item": "(30.192289000000, -97.777043700000)",
+                "count": "1"
+              },
+              {
+                "item": "(30.259080800000, -97.708901700000)",
+                "count": "1"
+              },
+              {
+                "item": "(30.326937800000, -97.739278300000)",
+                "count": "1"
+              },
+              {
+                "item": "(30.187320600000, -97.742280700000)",
+                "count": "1"
+              },
+              {
+                "item": "(30.311648900000, -97.690218700000)",
+                "count": "1"
+              },
+              {
+                "item": "(30.216590300000, -97.797368400000)",
+                "count": "1"
+              },
+              {
+                "item": "(30.273168500000, -97.699662600000)",
+                "count": "1"
+              },
+              {
+                "item": "(30.353094000000, -97.755306000000)",
+                "count": "1"
+              },
+              {
+                "item": "(30.217637000000, -97.855059000000)",
+                "count": "1"
+              },
+              {
+                "item": "(30.308702200000, -97.666625700000)",
+                "count": "1"
+              },
+              {
+                "item": "(30.269564600000, -97.724043800000)",
+                "count": "1"
+              },
+              {
+                "item": "(30.229861600000, -97.707010900000)",
+                "count": "1"
+              },
+              {
+                "item": "(30.259907000000, -97.733440000000)",
+                "count": "1"
+              },
+              {
+                "item": "(30.433823000000, -97.773177700000)",
+                "count": "1"
+              },
+              {
+                "item": "(30.362139300000, -97.730643300000)",
+                "count": "1"
+              },
+              {
+                "item": "(30.422342500000, -97.716097500000)",
+                "count": "1"
+              },
+              {
+                "item": "(30.271703300000, -97.745890600000)",
+                "count": "1"
+              }
+            ],
+            "smallest": "(30.187320600000, -97.742280700000)",
+            "count": "23",
+            "cardinality": "23"
+          },
+          "format": {
+
+          }
+        },
+        {
+          "id": 409386155,
+          "name": "Phone",
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "phone",
+          "position": 5,
+          "renderTypeName": "text",
+          "tableColumnId": 29631743,
+          "width": 160,
+          "cachedContents": {
+            "largest": "512-974-9980",
+            "non_null": "23",
+            "null": "0",
+            "top": [
+              {
+                "item": "512-974-9840",
+                "count": "1"
+              },
+              {
+                "item": "512-974-8860",
+                "count": "1"
+              },
+              {
+                "item": "512-974-9860",
+                "count": "1"
+              },
+              {
+                "item": "512-974-7480",
+                "count": "1"
+              },
+              {
+                "item": "512-974-1010",
+                "count": "1"
+              },
+              {
+                "item": "512-974-7460",
+                "count": "1"
+              },
+              {
+                "item": "512-974-3940",
+                "count": "1"
+              },
+              {
+                "item": "512-974-9900",
+                "count": "1"
+              },
+              {
+                "item": "512-974-8700",
+                "count": "1"
+              },
+              {
+                "item": "512-974-3800",
+                "count": "1"
+              },
+              {
+                "item": "512-974-7570",
+                "count": "1"
+              },
+              {
+                "item": "512-974-7500",
+                "count": "1"
+              },
+              {
+                "item": "512-974-9960",
+                "count": "1"
+              },
+              {
+                "item": "512-974-8840",
+                "count": "1"
+              },
+              {
+                "item": "512-974-8820",
+                "count": "1"
+              },
+              {
+                "item": "512-974-3625",
+                "count": "1"
+              },
+              {
+                "item": "512-974-8800",
+                "count": "1"
+              },
+              {
+                "item": "512-974-9880",
+                "count": "1"
+              },
+              {
+                "item": "512-974-7400",
+                "count": "1"
+              },
+              {
+                "item": "512-974-9940",
+                "count": "1"
+              }
+            ],
+            "smallest": "512-974-1010",
+            "count": "23",
+            "cardinality": "23"
+          },
+          "format": {
+
+          }
+        },
+        {
+          "id": 409386158,
+          "name": "District",
+          "dataTypeName": "number",
+          "description": "",
+          "fieldName": "district",
+          "position": 6,
+          "renderTypeName": "number",
+          "tableColumnId": 29631756,
+          "width": 196,
+          "cachedContents": {
+            "largest": "10",
+            "non_null": "23",
+            "null": "0",
+            "top": [
+              {
+                "item": "3",
+                "count": "4"
+              },
+              {
+                "item": "7",
+                "count": "4"
+              },
+              {
+                "item": "4",
+                "count": "3"
+              },
+              {
+                "item": "9",
+                "count": "3"
+              },
+              {
+                "item": "2",
+                "count": "2"
+              },
+              {
+                "item": "10",
+                "count": "2"
+              },
+              {
+                "item": "1",
+                "count": "2"
+              },
+              {
+                "item": "6",
+                "count": "1"
+              },
+              {
+                "item": "5",
+                "count": "1"
+              },
+              {
+                "item": "8",
+                "count": "1"
+              }
+            ],
+            "smallest": "1",
+            "count": "23",
+            "cardinality": "23"
+          },
+          "format": {
+
+          }
+        },
+        {
+          "id": 409386173,
+          "name": "Wi-Fi Available",
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "wifi",
+          "position": 7,
+          "renderTypeName": "text",
+          "tableColumnId": 81201472,
+          "cachedContents": {
+            "largest": "Yes",
+            "non_null": "23",
+            "null": "0",
+            "top": [
+              {
+                "item": "Yes",
+                "count": "23"
+              }
+            ],
+            "smallest": "Yes",
+            "count": "23",
+            "cardinality": "23"
+          },
+          "format": {
+
+          }
+        },
+        {
+          "id": 409386170,
+          "name": "Public Computers Available",
+          "dataTypeName": "number",
+          "description": "Number of desktop computers available for in-library use",
+          "fieldName": "computers",
+          "position": 8,
+          "renderTypeName": "number",
+          "tableColumnId": 81201469,
+          "cachedContents": {
+            "largest": "128",
+            "non_null": "23",
+            "null": "0",
+            "top": [
+              {
+                "item": "20",
+                "count": "3"
+              },
+              {
+                "item": "11",
+                "count": "2"
+              },
+              {
+                "item": "25",
+                "count": "2"
+              },
+              {
+                "item": "26",
+                "count": "2"
+              },
+              {
+                "item": "18",
+                "count": "1"
+              },
+              {
+                "item": "6",
+                "count": "1"
+              },
+              {
+                "item": "5",
+                "count": "1"
+              },
+              {
+                "item": "2",
+                "count": "1"
+              },
+              {
+                "item": "21",
+                "count": "1"
+              },
+              {
+                "item": "24",
+                "count": "1"
+              },
+              {
+                "item": "15",
+                "count": "1"
+              },
+              {
+                "item": "16",
+                "count": "1"
+              },
+              {
+                "item": "10",
+                "count": "1"
+              },
+              {
+                "item": "9",
+                "count": "1"
+              },
+              {
+                "item": "8",
+                "count": "1"
+              },
+              {
+                "item": "128",
+                "count": "1"
+              },
+              {
+                "item": "0",
+                "count": "1"
+              },
+              {
+                "item": "7",
+                "count": "1"
+              }
+            ],
+            "smallest": "0",
+            "count": "23",
+            "cardinality": "23"
+          },
+          "format": {
+
+          }
+        },
+        {
+          "id": 409386172,
+          "name": "In House Technology Lending Programs",
+          "dataTypeName": "number",
+          "description": "Electronic devices available for checkout via a kiosk",
+          "fieldName": "lending",
+          "position": 9,
+          "renderTypeName": "number",
+          "tableColumnId": 81201471,
+          "cachedContents": {
+            "largest": "67",
+            "non_null": "2",
+            "null": "21",
+            "top": [
+              {
+                "item": "8",
+                "count": "1"
+              },
+              {
+                "item": "67",
+                "count": "1"
+              }
+            ],
+            "smallest": "8",
+            "count": "23",
+            "cardinality": "23"
+          },
+          "format": {
+
+          }
+        },
+        {
+          "id": 409386171,
+          "name": "Digital Literacy Training",
+          "dataTypeName": "text",
+          "description": "",
+          "fieldName": "training",
+          "position": 10,
+          "renderTypeName": "text",
+          "tableColumnId": 81201470,
+          "cachedContents": {
+            "largest": "Yes",
+            "non_null": "23",
+            "null": "0",
+            "top": [
+              {
+                "item": "Yes",
+                "count": "22"
+              },
+              {
+                "item": "No",
+                "count": "1"
+              }
+            ],
+            "smallest": "No",
+            "count": "23",
+            "cardinality": "23"
+          },
+          "format": {
+
+          }
+        },
+        {
+          "id": 409386164,
+          "name": "Single Member Council Districts",
+          "dataTypeName": "number",
+          "fieldName": ":@computed_region_8spj_utxs",
+          "position": 14,
+          "renderTypeName": "number",
+          "tableColumnId": 80224389,
+          "computationStrategy": {
+            "source_columns": [
+              "address"
+            ],
+            "type": "georegion_match_on_point",
+            "parameters": {
+              "region": "_8spj-utxs",
+              "primary_key": "_feature_id"
+            }
+          },
+          "format": {
+
+          }
+        },
+        {
+          "id": 409386165,
+          "name": "BOUNDARIES_single_member_districts",
+          "dataTypeName": "number",
+          "fieldName": ":@computed_region_q9nd_rr82",
+          "position": 15,
+          "renderTypeName": "number",
+          "tableColumnId": 80224390,
+          "computationStrategy": {
+            "source_columns": [
+              "address"
+            ],
+            "type": "georegion_match_on_point",
+            "parameters": {
+              "region": "_q9nd-rr82",
+              "primary_key": "_feature_id"
+            }
+          },
+          "format": {
+
+          }
+        },
+        {
+          "id": 409386166,
+          "name": "Neighborhood Planning Areas",
+          "dataTypeName": "number",
+          "fieldName": ":@computed_region_e9j2_6w3z",
+          "position": 16,
+          "renderTypeName": "number",
+          "tableColumnId": 80224391,
+          "computationStrategy": {
+            "source_columns": [
+              "address"
+            ],
+            "type": "georegion_match_on_point",
+            "parameters": {
+              "region": "_e9j2-6w3z",
+              "primary_key": "_feature_id"
+            }
+          },
+          "format": {
+
+          }
+        },
+        {
+          "id": 409386167,
+          "name": "Community Registry",
+          "dataTypeName": "number",
+          "fieldName": ":@computed_region_m2th_e4b7",
+          "position": 17,
+          "renderTypeName": "number",
+          "tableColumnId": 80224392,
+          "computationStrategy": {
+            "source_columns": [
+              "address"
+            ],
+            "type": "georegion_match_on_point",
+            "parameters": {
+              "region": "_m2th-e4b7",
+              "primary_key": "_feature_id"
+            }
+          },
+          "format": {
+
+          }
+        },
+        {
+          "id": 409386168,
+          "name": "Zipcodes",
+          "dataTypeName": "number",
+          "fieldName": ":@computed_region_rxpj_nzrk",
+          "position": 18,
+          "renderTypeName": "number",
+          "tableColumnId": 80224393,
+          "computationStrategy": {
+            "source_columns": [
+              "address"
+            ],
+            "type": "georegion_match_on_point",
+            "parameters": {
+              "region": "_rxpj-nzrk",
+              "primary_key": "_feature_id"
+            }
+          },
+          "format": {
+
+          }
+        },
+        {
+          "id": 409386169,
+          "name": "Zip Codes",
+          "dataTypeName": "number",
+          "fieldName": ":@computed_region_a3it_2a2z",
+          "position": 19,
+          "renderTypeName": "number",
+          "tableColumnId": 80224394,
+          "computationStrategy": {
+            "source_columns": [
+              "address"
+            ],
+            "type": "georegion_match_on_point",
+            "parameters": {
+              "region": "_a3it-2a2z",
+              "primary_key": "_feature_id"
+            }
+          },
+          "format": {
+
+          }
+        }
+      ],
+      "grants": [
+        {
+          "inherited": false,
+          "type": "viewer",
+          "flags": [
+            "public"
+          ]
+        }
+      ],
+      "license": {
+        "name": "Public Domain"
+      },
+      "metadata": {
+        "rdfSubject": "name",
+        "custom_fields": {
+          "Ownership": {
+            "Department name": "Austin Public Library"
+          },
+          "Publishing Information": {
+            "Update Frequency": "As Needed"
+          },
+          "Citywide Strategic Plan": {
+            "Strategic Priority": "High-performing Government"
+          }
+        },
+        "rowIdentifier": 409386151,
+        "rowLabel": "Each single library",
+        "availableDisplayTypes": [
+          "table",
+          "fatrow",
+          "page"
+        ],
+        "renderTypeConfig": {
+          "visible": {
+            "table": true
+          }
+        }
+      },
+      "owner": {
+        "id": "expf-t7dg",
+        "createdAt": 1710871681,
+        "displayName": "Austin Public Library Owners",
+        "screenName": "Austin Public Library Owners",
+        "type": "team",
+        "members": [
+          {
+            "id": "f8aq-hcwe",
+            "createdAt": 1432666939,
+            "disabledAt": 1675101699,
+            "displayName": "Alex Nguyen (alex.nguyen@austintexas.gov)",
+            "screenName": "Alex Nguyen (alex.nguyen@austintexas.gov)",
+            "teamId": 1588542,
+            "teamRole": "owner",
+            "type": "interactive",
+            "flags": [
+              "siteMember"
+            ]
+          },
+          {
+            "id": "knx5-5zd7",
+            "createdAt": 1432848493,
+            "disabledAt": 1675101723,
+            "displayName": "sarah.cronin@austintexas.gov",
+            "screenName": "sarah.cronin@austintexas.gov",
+            "teamId": 1588542,
+            "teamRole": "owner",
+            "type": "interactive",
+            "flags": [
+              "siteMember"
+            ]
+          }
+        ]
+      },
+      "query": {
+
+      },
+      "rights": [
+        "read"
+      ],
+      "tableAuthor": {
+        "id": "expf-t7dg",
+        "createdAt": 1710871681,
+        "displayName": "Austin Public Library Owners",
+        "screenName": "Austin Public Library Owners",
+        "type": "team",
+        "members": [
+          {
+            "id": "f8aq-hcwe",
+            "createdAt": 1432666939,
+            "disabledAt": 1675101699,
+            "displayName": "Alex Nguyen (alex.nguyen@austintexas.gov)",
+            "screenName": "Alex Nguyen (alex.nguyen@austintexas.gov)",
+            "teamId": 1588542,
+            "teamRole": "owner",
+            "type": "interactive",
+            "flags": [
+              "siteMember"
+            ]
+          },
+          {
+            "id": "knx5-5zd7",
+            "createdAt": 1432848493,
+            "disabledAt": 1675101723,
+            "displayName": "sarah.cronin@austintexas.gov",
+            "screenName": "sarah.cronin@austintexas.gov",
+            "teamId": 1588542,
+            "teamRole": "owner",
+            "type": "interactive",
+            "flags": [
+              "siteMember"
+            ]
+          }
+        ]
+      },
+      "tags": [
+        "books",
+        "computers",
+        "culture",
+        "library",
+        "meeting spaces",
+        "public"
+      ],
+      "flags": [
+        "default",
+        "federated",
+        "internalToPublicFederatedView",
+        "ownerMayBeContacted",
+        "restorable",
+        "restorePossibleForType",
+        "unsaved"
+      ]
+    }
+  },
+  "data": [
+    [
+      "row-mrnm_x4xy-pff2",
+      "00000000-0000-0000-0E74-E6D820DDF63D",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/taxonomy/term/183",
+        null],
+      "Austin History Center - John Henry Faulk Building",
+      [
+        "{\"address\": \"800 Guadalupe St\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78701\"}",
+        "30.271709981",
+        "-97.74589002",
+        null, false],
+      "(30.271703300000, -97.745890600000)",
+      "512-974-7480",
+      "9",
+      "Yes",
+      "2",
+      null, "Yes",
+      "9",
+      "10",
+      "60",
+      "217",
+      "24",
+      "2856"
+    ],
+    [
+      "row-7fqh-7654~zd79",
+      "00000000-0000-0000-EBBC-104ACD56CE49",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/taxonomy/term/194",
+        null],
+      "Carver Branch",
+      [
+        "{\"address\": \"1161 Angelina St\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78702\"}",
+        "30.269948021",
+        "-97.724265967",
+        null, false],
+      "(30.269564600000, -97.724043800000)",
+      "512-974-1010",
+      "1",
+      "Yes",
+      "26",
+      null, "Yes",
+      "1",
+      "8",
+      "56",
+      "309",
+      "1",
+      "2857"
+    ],
+    [
+      "row-7kn6~rn3u-8mbj",
+      "00000000-0000-0000-3228-BF7210CE1877",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/central-library",
+        null],
+      "Central Library",
+      [
+        "{\"address\": \"710 W Cesar Chavez St\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78701\"}",
+        "30.266101984",
+        "-97.751692979",
+        null, false],
+      "(30.265608200000, -97.751878400000)",
+      "512-974-7400",
+      "9",
+      "Yes",
+      "128",
+      "67",
+      "Yes",
+      "9",
+      "10",
+      "60",
+      "217",
+      "24",
+      "2856"
+    ],
+    [
+      "row-28tj~qigw~hvuc",
+      "00000000-0000-0000-9F42-6D1D3C899CE9",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/taxonomy/term/197",
+        null],
+      "Little Walnut Creek Branch",
+      [
+        "{\"address\": \"835 W Rundberg Ln\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78758\"}",
+        "30.363273011",
+        "-97.698474013",
+        null, false],
+      "(30.363407300000, -97.698390500000)",
+      "512-974-9860",
+      "4",
+      "Yes",
+      "24",
+      null, "Yes",
+      "4",
+      "9",
+      "16",
+      "63",
+      "18",
+      "3642"
+    ],
+    [
+      "row-xqwm.gr52-6jz9",
+      "00000000-0000-0000-D613-F851C55B817D",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/taxonomy/term/185",
+        null],
+      "University Hills Branch",
+      [
+        "{\"address\": \"4721 Loyola Ln\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78723\"}",
+        "30.308688004",
+        "-97.666558995",
+        null, false],
+      "(30.308702200000, -97.666625700000)",
+      "512-974-9940",
+      "1",
+      "Yes",
+      "18",
+      null, "Yes",
+      "1",
+      "8",
+      "41",
+      "309",
+      "33",
+      "3239"
+    ],
+    [
+      "row-mxtu-fdjf~g4hn",
+      "00000000-0000-0000-B077-D3EC91E5F4EB",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/taxonomy/term/196",
+        null],
+      "Howson Branch",
+      [
+        "{\"address\": \"2500 Exposition Blvd\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78703\"}",
+        "30.298259994",
+        "-97.76762396",
+        null, false],
+      "(30.298240900000, -97.767602100000)",
+      "512-974-8800",
+      "10",
+      "Yes",
+      "5",
+      null, "Yes",
+      "10",
+      "5",
+      "6",
+      "126",
+      "69",
+      "2858"
+    ],
+    [
+      "row-pabp.camp-5dxd",
+      "00000000-0000-0000-9D7E-9AFC9D993575",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/taxonomy/term/200",
+        null],
+      "John Gillum Branch (North Village)",
+      [
+        "{\"address\": \"2505 Steck Ave\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78757\"}",
+        "30.362157002",
+        "-97.73053496",
+        null, false],
+      "(30.362139300000, -97.730643300000)",
+      "512-974-9960",
+      "7",
+      "Yes",
+      "21",
+      null, "Yes",
+      "7",
+      "7",
+      "95",
+      "217",
+      "16",
+      "3645"
+    ],
+    [
+      "row-59s4~9y86~aarj",
+      "00000000-0000-0000-7C26-8301BAFEB2C9",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/taxonomy/term/195",
+        null],
+      "Hampton Branch at Oak Hill",
+      [
+        "{\"address\": \"5125 Convict Hill Rd\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78749\"}",
+        "30.217655003",
+        "-97.855041007",
+        null, false],
+      "(30.217637000000, -97.855059000000)",
+      "512-974-9900",
+      "8",
+      "Yes",
+      "9",
+      null, "Yes",
+      "8",
+      "2",
+      null, "531",
+      "53",
+      "3638"
+    ],
+    [
+      "row-zd3n.nmmw-dvj4",
+      "00000000-0000-0000-90EE-FBCFC4E6E060",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/taxonomy/term/205",
+        null],
+      "Ruiz Branch",
+      [
+        "{\"address\": \"1600 Grove Blvd\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78741\"}",
+        "30.229867017",
+        "-97.707050963",
+        null, false],
+      "(30.229861600000, -97.707010900000)",
+      "512-974-7500",
+      "3",
+      "Yes",
+      "26",
+      null, "Yes",
+      "3",
+      "3",
+      "94",
+      "248",
+      "55",
+      "3256"
+    ],
+    [
+      "row-dcyf-zbdw_4dpy",
+      "00000000-0000-0000-BC51-239EC7571E1C",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/taxonomy/term/204",
+        null],
+      "Recycled Reads Bookstore",
+      [
+        "{\"address\": \"5335 Burnet Rd\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78756\"}",
+        "30.327026015",
+        "-97.739325984",
+        null, false],
+      "(30.326937800000, -97.739278300000)",
+      "512-974-7460",
+      "7",
+      "Yes",
+      "0",
+      null, "No",
+      "7",
+      "7",
+      "25",
+      "217",
+      "7",
+      "3644"
+    ],
+    [
+      "row-c2gk.heaq~rn59",
+      "00000000-0000-0000-0ABF-08AD75E97E07",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/taxonomy/term/202",
+        null],
+      "Old Quarry Branch",
+      [
+        "{\"address\": \"7051 Village Center Dr\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78731\"}",
+        "30.353026008",
+        "-97.755172978",
+        null, false],
+      "(30.353094000000, -97.755306000000)",
+      "512-974-8860",
+      "10",
+      "Yes",
+      "6",
+      null, "Yes",
+      "10",
+      "5",
+      null, "217",
+      "66",
+      "3247"
+    ],
+    [
+      "row-dvjv~iw4j.gctb",
+      "00000000-0000-0000-ACFE-C47A6683635B",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/taxonomy/term/206",
+        null],
+      "St. John Branch",
+      [
+        "{\"address\": \"7500 Blessing Ave\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78752\"}",
+        "30.332762003",
+        "-97.694025989",
+        null, false],
+      "(30.332823100000, -97.693701400000)",
+      "512-974-7570",
+      "4",
+      "Yes",
+      "25",
+      null, "Yes",
+      "4",
+      "9",
+      "43",
+      "63",
+      "3",
+      "3641"
+    ],
+    [
+      "row-kays~9gv3-575t",
+      "00000000-0000-0000-B039-4E0658E72AFE",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/taxonomy/term/208",
+        null],
+      "Spicewood Springs Branch",
+      [
+        "{\"address\": \"8637 Spicewood Springs Rd\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78759\"}",
+        "30.433571236",
+        "-97.772902128",
+        null, false],
+      "(30.433823000000, -97.773177700000)",
+      "512-974-3800",
+      "6",
+      "Yes",
+      "20",
+      null, "Yes",
+      "6",
+      "6",
+      null, "540",
+      "28",
+      "3639"
+    ],
+    [
+      "row-kwtr~5cqf-w9b8",
+      "00000000-0000-0000-4A48-A012DC4159AF",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/taxonomy/term/211",
+        null],
+      "Yarborough Branch",
+      [
+        "{\"address\": \"2200 Hancock Dr\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78756\"}",
+        "30.323460982",
+        "-97.740733976",
+        null, false],
+      "(30.323427200000, -97.740711300000)",
+      "512-974-8820",
+      "7",
+      "Yes",
+      "8",
+      null, "Yes",
+      "7",
+      "7",
+      "53",
+      "217",
+      "7",
+      "3644"
+    ],
+    [
+      "row-5kty.mde7~x777",
+      "00000000-0000-0000-F70A-163A100FE697",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/taxonomy/term/184",
+        null],
+      "Windsor Park Branch",
+      [
+        "{\"address\": \"5833 Westminster Dr\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78723\"}",
+        "30.31166601",
+        "-97.690238039",
+        null, false],
+      "(30.311648900000, -97.690218700000)",
+      "512-974-9840",
+      "4",
+      "Yes",
+      "20",
+      null, "Yes",
+      "1",
+      "8",
+      "84",
+      "309",
+      "33",
+      "3239"
+    ],
+    [
+      "row-9w76.v7s7-jbwa",
+      "00000000-0000-0000-DA03-625F7BEA28EA",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/taxonomy/term/207",
+        null],
+      "Southeast Branch",
+      [
+        "{\"address\": \"5803 Nuckols Crossing Rd\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78744\"}",
+        "30.186620001",
+        "-97.742100981",
+        null, false],
+      "(30.187320600000, -97.742280700000)",
+      "512-974-8840",
+      "2",
+      "Yes",
+      "16",
+      null, "Yes",
+      "2",
+      "4",
+      "61",
+      "484",
+      "20",
+      "3258"
+    ],
+    [
+      "row-hz6f.wh6x_w93c",
+      "00000000-0000-0000-8794-7AC676BF1226",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/taxonomy/term/203",
+        null],
+      "Pleasant Hill Branch",
+      [
+        "{\"address\": \"211 E William Cannon Dr\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78745\"}",
+        "30.192246982",
+        "-97.777164996",
+        null, false],
+      "(30.192289000000, -97.777043700000)",
+      "512-974-3940",
+      "2",
+      "Yes",
+      "11",
+      null, "Yes",
+      "2",
+      "4",
+      null, "372",
+      "23",
+      "3259"
+    ],
+    [
+      "row-rhw5~ftee.c43q",
+      "00000000-0000-0000-C2FD-5DA02F3211A8",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/taxonomy/term/210",
+        null],
+      "Twin Oaks Branch",
+      [
+        "{\"address\": \"1800 S Fifth St\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78704\"}",
+        "30.248673996",
+        "-97.762382002",
+        null, false],
+      "(30.248696800000, -97.762381300000)",
+      "512-974-9980",
+      "9",
+      "Yes",
+      "25",
+      null, "Yes",
+      "9",
+      "10",
+      "42",
+      "217",
+      "75",
+      "2859"
+    ],
+    [
+      "row-6d3k-5ha5.epxk",
+      "00000000-0000-0000-925F-FF85B6B242F2",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/taxonomy/term/209",
+        null],
+      "Terrazas Branch",
+      [
+        "{\"address\": \"1105 E Cesar Chavez St\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78702\"}",
+        "30.259904992",
+        "-97.733440966",
+        null, false],
+      "(30.259907000000, -97.733440000000)",
+      "512-974-3625",
+      "3",
+      "Yes",
+      "15",
+      null, "Yes",
+      "3",
+      "3",
+      "35",
+      "309",
+      "1",
+      "2857"
+    ],
+    [
+      "row-5g35.66c6.97x8",
+      "00000000-0000-0000-4D85-BAF3CBE2CEBE",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/taxonomy/term/199",
+        null],
+      "Milwood Branch",
+      [
+        "{\"address\": \"12500 Amherst Dr\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78727\"}",
+        "30.42233299",
+        "-97.716188998",
+        null, false],
+      "(30.422342500000, -97.716097500000)",
+      "512-974-9880",
+      "7",
+      "Yes",
+      "7",
+      null, "Yes",
+      "7",
+      "7",
+      null, "540",
+      "36",
+      "3243"
+    ],
+    [
+      "row-8ti9.dwmk.mzvf",
+      "00000000-0000-0000-3EF5-72D901DEFBF6",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/taxonomy/term/198",
+        null],
+      "Menchaca Road Branch",
+      [
+        "{\"address\": \"5500 Menchaca Rd\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78745\"}",
+        "30.216598003",
+        "-97.797321965",
+        null, false],
+      "(30.216590300000, -97.797368400000)",
+      "512-974-8700",
+      "5",
+      "Yes",
+      "20",
+      "8",
+      "Yes",
+      "5",
+      "1",
+      "92",
+      "373",
+      "23",
+      "3259"
+    ],
+    [
+      "row-bawt.juar.up6f",
+      "00000000-0000-0000-B641-9F8177092ECD",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/taxonomy/term/201",
+        null],
+      "Willie Mae Kirk Branch",
+      [
+        "{\"address\": \"3101 Oak Springs Dr\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78702\"}",
+        "30.272980007",
+        "-97.699731969",
+        null, false],
+      "(30.273168500000, -97.699662600000)",
+      "512-974-9920",
+      "3",
+      "Yes",
+      "11",
+      null, "Yes",
+      "3",
+      "3",
+      "29",
+      "309",
+      "1",
+      "2857"
+    ],
+    [
+      "row-m4tr~unff~uzbr",
+      "00000000-0000-0000-ED63-7CC45A3C9F5D",
+      0, 1761241912, null, 1761241916, null, "{ }",
+      [
+        "http://library.austintexas.gov/taxonomy/term/186",
+        null],
+      "Cepeda Branch",
+      [
+        "{\"address\": \"651 N Pleasant Valley Rd\", \"city\": \"Austin\", \"state\": \"TX\", \"zip\": \"78702\"}",
+        "30.259047984",
+        "-97.708882996",
+        null, false],
+      "(30.259080800000, -97.708901700000)",
+      "512-974-7372",
+      "3",
+      "Yes",
+      "10",
+      null, "Yes",
+      "3",
+      "3",
+      "29",
+      "309",
+      "1",
+      "2857"
+    ]
+  ]
+}

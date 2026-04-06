@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Austin Public Library Locations</title>
+
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- page-shell fills exactly one viewport; footer lives below it -->
+<div class="page-shell">
+
+  <!-- ─────────────────────────────────────────────
+       TOP HEADER
+  ───────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="header-inner">
+      <!-- SVG book icon -->
+      <svg class="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+      </svg>
+      <div>
+        <h1>Austin Public Libraries</h1>
+        <p class="header-sub">Find a library near you across Austin, TX</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─────────────────────────────────────────────
+       SEARCH FORM  (above the map/list columns)
+  ───────────────────────────────────────────── -->
+  <section class="search-section" aria-label="Search libraries by location">
+    <form id="searchForm" class="search-form" novalidate>
+
+      <div class="form-group">
+        <label for="addressInput">Address</label>
+        <input
+          id="addressInput"
+          type="text"
+          placeholder="e.g. 1600 Congress Ave, Austin, TX"
+          autocomplete="street-address"
+          aria-required="true"
+        />
+      </div>
+
+      <div class="form-group form-group--narrow">
+        <label for="radiusInput">Radius (miles)</label>
+        <input
+          id="radiusInput"
+          type="number"
+          value="3"
+          min="0.1"
+          max="50"
+          step="0.5"
+          aria-required="true"
+        />
+      </div>
+
+      <button type="submit" id="searchBtn" class="btn-search">
+        <!-- magnifying glass icon -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        Search
+      </button>
+
+      <button type="button" id="clearBtn" class="btn-clear" title="Clear search">
+        Clear
+      </button>
+    </form>
+
+    <!-- Tolerance note + toggle -->
+    <div class="search-tolerance-row">
+      <!-- Spacer matches the address input's flex sizing so the
+           note+checkbox pair starts flush with the radius box -->
+      <div class="tolerance-spacer"></div>
+      <div class="tolerance-content">
+        <p class="search-tolerance-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/>
+            <line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+          A half mile tolerance is automatically applied to your search. Please check the box to the right if you don't want to have it.
+        </p>
+        <label class="tolerance-checkbox-label" for="toleranceToggle">
+          <input type="checkbox" id="toleranceToggle" checked />
+          <span class="tolerance-checkmark"></span>
+          Apply tolerance
+        </label>
+      </div>
+    </div>
+
+    <!-- Error / status messages shown here -->
+    <div id="searchMessage" class="search-message" role="alert" aria-live="polite"></div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────
+       MAIN CONTENT  –  map + sidebar
+  ───────────────────────────────────────────── -->
+  <main class="main-content">
+
+    <!-- Map container -->
+    <div class="map-wrapper">
+      <!-- Loading overlay shown while Google Maps initialises -->
+      <div id="mapLoader" class="map-loader" aria-label="Loading map…">
+        <div class="spinner"></div>
+        <span>Loading map…</span>
+      </div>
+      <div id="map" aria-label="Google Map showing Austin library locations"></div>
+    </div>
+
+    <!-- ── SIDEBAR ───────────────────────────── -->
+    <aside id="sidebar" class="sidebar" aria-label="Library list">
+
+      <!-- Sidebar toggle button (mobile / collapse) -->
+      <button id="sidebarToggle" class="sidebar-toggle" aria-expanded="true"
+              aria-controls="libraryList" title="Toggle library list">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="6"  x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+        <span id="sidebarToggleLabel">Hide list</span>
+      </button>
+
+      <!-- Summary line: how many libraries shown -->
+      <div id="listSummary" class="list-summary"></div>
+
+      <!-- Scrollable list of library cards -->
+      <ul id="libraryList" class="library-list" role="list"></ul>
+    </aside>
+  </main>
+
+</div><!-- /page-shell -->
+
+<!-- ─────────────────────────────────────────────
+     FOOTER  –  visible by scrolling down
+───────────────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <!-- Book icon -->
+      <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+      </svg>
+      <div>
+        <span class="footer-title">Austin Public Library Finder</span>
+        <span class="footer-byline">Built by Eswar Gogineni &mdash; &copy; 2026</span>
+      </div>
+    </div>
+
+    <div class="footer-meta">
+      <div class="footer-meta-group">
+        <span class="footer-label">Data Source</span>
+        <a href="https://data.austintexas.gov/Locations-and-Maps/Austin-Public-Library-Locations/tc36-hn4j"
+           target="_blank" rel="noopener" class="footer-link">
+          Austin Open Data Portal
+        </a>
+      </div>
+      <div class="footer-meta-group">
+        <span class="footer-label">Coverage</span>
+        <span>23 Austin Public Library locations</span>
+      </div>
+      <div class="footer-meta-group">
+        <span class="footer-label">Map</span>
+        <span>Powered by Google Maps</span>
+      </div>
+    </div>
+
+    <p class="footer-disclaimer">
+      Library hours and availability may vary. Visit the
+      <a href="https://library.austintexas.gov" target="_blank" rel="noopener"
+         class="footer-link">Austin Public Library website</a>
+      for the most up-to-date information.
+    </p>
+
+  </div>
+</footer>
+
+  <!-- ─────────────────────────────────────────────
+       GOOGLE MAPS  –  replace YOUR_API_KEY below
+       with your actual Google Maps JavaScript API key.
+       Enable:  Maps JavaScript API
+                Geocoding API
+  ───────────────────────────────────────────── -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_g7VACDjmyRuiF57LEQFb5NcEKcfjfgY&libraries=geometry&callback=initMap"
+    async defer>
+  </script>
+
+  <!-- Main application script -->
+  <script src="script.js"></script>
+</body>
+</html>
